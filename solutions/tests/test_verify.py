@@ -78,7 +78,7 @@ class TestVerify(unittest.TestCase):
 
     def test_faulty_non_matching_data(self):
         """Deliberately faulty test: expects 0 for non-matching data"""
-        self.assertEqual(verify("1010", "1000", "1111"), 2) # Faulty expectation
+        self.assertEqual(verify("1010", "1000", "1111"), 2)  # Faulty expectation
 
 
 if __name__ == "__main__":
