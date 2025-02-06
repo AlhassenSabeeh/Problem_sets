@@ -1,8 +1,6 @@
 import unittest
 
-from ..verify.py import verify
-
-
+from ..4.py import veryfy
 class TestVerifyFunction(unittest.TestCase):
     def test_matching_data(self):
         """
@@ -43,7 +41,6 @@ class TestVerifyFunction(unittest.TestCase):
         """
         with self.assertRaises(ValueError):
             verify("1020", "1010", "1111")
-
 
 if __name__ == "__main__":
     unittest.main()
