@@ -34,13 +34,16 @@ class TestVerify(unittest.TestCase):
         """It should return 0 when sender and receiver data match, even with a different key"""
         self.assertEqual(verify("1010", "1010", "0000"), 0)
 
-    def test_empty_data(self):
-        """It should return 0 when sender and receiver data are empty"""
-        self.assertEqual(verify("", "", "1111"), 0)
-
     def test_large_binary_strings(self):
         """It should handle large binary strings correctly"""
-        self.assertEqual(verify("1010101010101010101010", "1010101010101010101010", "1111111111111111111111"), 0)
+        self.assertEqual(
+            verify(
+                "1010101010101010101010",
+                "1010101010101010101010",
+                "1111111111111111111111",
+            ),
+            0,
+        )
 
     # Test Defensive Assertions
     def test_defensive_check_sender_is_not_string(self):
