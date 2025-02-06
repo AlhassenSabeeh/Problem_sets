@@ -1,23 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Test module for verify function.
-Includes deliberately faulty tests for debugging practice.
-
-Test categories:
-    - Edge Cases: Matching and non-matching data with simple keys.
-    - Standard Cases: Various combinations of sender, receiver, and key.
-    - Defensive Tests: Wrong input types, assertions.
-
-Created on Dec 28, 2024.
-Team Number: 28
-Team Name: MIT Alpha
-@author: AL-HASSEN SABEEH
-"""
-
 import unittest
 
-from ..verify import verify
+from ..verify.py import verify
 
 
 class TestVerifyFunction(unittest.TestCase):
